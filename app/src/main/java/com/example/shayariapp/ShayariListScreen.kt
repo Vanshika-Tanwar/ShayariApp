@@ -6,6 +6,7 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -29,6 +30,7 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 import com.example.shayariapp.Routing.ShayariRoutingItem
 import com.example.shayariapp.ui.theme.primary
+import com.example.shayariapp.ui.theme.primaryLight
 import com.example.shayariapp.ui.theme.purple
 
 @Composable
@@ -45,36 +47,38 @@ fun ShayariListScreen(navHostController: NavHostController? = null, title: Strin
                 .fillMaxSize()
                 .background(color = primary)
         ) {
-            MainToolBar(title = title.toString()) { }
+            Column {
+                MainToolBar(title = title.toString()) { navHostController?.popBackStack()}
 
-            val myFinalList = getList().filter {
-                it.title == title.toString()
-            }
-            val finalList = myFinalList[0]
-            finalList.list?.let { list ->
-                LazyColumn {
-                    items(list) { item ->
-                        Card(
-                            modifier = Modifier
-                                .fillMaxWidth()
-                                .padding(start = 15.dp, top = 15.dp, end = 15.dp)
-                                .clickable {
-                                    navHostController?.navigate(ShayariRoutingItem.FinalShayariScreen.route + "$item")
-                                }
-                        ) {
-                            Text(
-                                text = item,
-                                style = TextStyle(fontSize = 18.sp),
-                                color = Color.White,
+                val myFinalList = getList().filter {
+                    it.title == title.toString()
+                }
+                val finalList = myFinalList[0]
+                finalList.list?.let { list ->
+                    LazyColumn {
+                        items(list) { item ->
+                            Card(
                                 modifier = Modifier
-                                    .fillMaxSize()
-                                    .padding(10.dp)
-                            )
+                                    .fillMaxWidth()
+                                    .padding(start = 15.dp, top = 15.dp, end = 15.dp)
+                                    .clickable {
+                                        navHostController?.navigate(ShayariRoutingItem.FinalShayariScreen.route + "/${item}"+"/${title}" )
+                                    },
+                                colors = CardDefaults.cardColors(containerColor = primaryLight)
+                            ) {
+                                Text(
+                                    text = item,
+                                    style = TextStyle(fontSize = 18.sp),
+                                    color = Color.White,
+                                    modifier = Modifier
+                                        .fillMaxSize()
+                                        .padding(10.dp)
+                                )
+                            }
                         }
                     }
                 }
             }
-
         }
     }
 }

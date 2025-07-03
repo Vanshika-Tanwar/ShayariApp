@@ -22,8 +22,10 @@ fun ShayariRouting(navHostController : NavHostController){
             val title = it.arguments?.getString("title")
             ShayariListScreen(navHostController,title)
         }
-        composable(ShayariRoutingItem.FinalShayariScreen.route+"{item}"){
-            FinalShayariScreen(it.arguments?.getString("item").toString())
+        composable(ShayariRoutingItem.FinalShayariScreen.route+"/{item}"+"/{title}"){
+            val item = it.arguments?.getString("item").toString()
+            val title = it.arguments?.getString("title").toString()
+            FinalShayariScreen(navHostController, item, title)
         }
     }
 

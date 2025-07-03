@@ -38,7 +38,7 @@ fun CategoryScreen(navHostController: NavHostController) {
                 .background(color = primary)
         ) {
             Column {
-                MainToolBar("Category", {})
+                MainToolBar("Category"){ }
                 //RecyclerView
                 LazyColumn() {
                     items(getList()) { item ->
