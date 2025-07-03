@@ -1,6 +1,7 @@
 package com.example.shayariapp
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
@@ -23,12 +24,13 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavHostController
+import com.example.shayariapp.Routing.ShayariRoutingItem
 import com.example.shayariapp.ui.theme.primary
 import com.example.shayariapp.ui.theme.primaryLight
 
-@Preview
 @Composable
-fun CategoryScreen() {
+fun CategoryScreen(navHostController: NavHostController) {
     Surface {
         Box(
             modifier = Modifier
@@ -45,7 +47,10 @@ fun CategoryScreen() {
                             modifier = Modifier
                                 .fillMaxWidth()
                                 .height(85.dp)
-                                .padding(start = 15.dp,end = 15.dp,top=15.dp),
+                                .padding(start = 15.dp,end = 15.dp,top=15.dp)
+                                .clickable{
+                                    navHostController.navigate(ShayariRoutingItem.shayariListScreen.route+"/${item.title.toString()}")
+                                },
                             colors = CardDefaults.cardColors(containerColor = primaryLight)
                         ) {
                             Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center){
