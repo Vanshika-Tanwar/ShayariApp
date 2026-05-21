@@ -70,74 +70,124 @@ fun MainToolBar(title: String, onClick: () -> Unit) {
 
 fun getList(): List<ShayariModel> {
     return listOf(
+
         ShayariModel(
             "Love", listOf(
-                "Tere bina jee na paayenge hum,\nTujh se juda ho kar mar jaayenge hum.",
-                "Mohabbat ki hai tumse bepanah,\nTum na samjhe toh kya gila karen hum?",
-                "Tujh mein basi hai meri duniya saari,\nTere bina lagti hai zindagi adhoori.",
-                "Teri muskurahat meri pehchaan hai,\nTere bina jeena ek sazaa hai.",
-                "Tere pyaar mein itna kho gaye hain hum,\nApne wajood ko hi bhool baithe hain hum.",
-                "Tu paas ho toh sab kuch hai,\nTere bina sab adhoora sa lagta hai.",
-                "Dil karta hai har ghadi tujhe dekhta rahoon,\nTere saath apna har pal jeeta rahoon.",
-                "Na chaha tha kabhi kuch, par tujhe chaah baitha,\nKya thi khata meri jo mohabbat mein haar baitha?",
-                "Pyar sirf tujhe kiya, bepanah aur bekhud,\nTere liye har dard bhi gala lagaya.",
-                "Ishq hai tu mera, saza bhi tu hi,\nTu mile ya na mile, dua bhi tu hi."
+                "Ishq par zor nahi,\nYeh woh aatish hai jo lagaye na lage.",
+
+                "Dil hi toh hai na sang-o-khisht,\nDard se bhar na aaye kyun.",
+
+                "Mohabbat mein nahi hai farq jeene aur marne ka,\nUsi ko dekh kar jeete hain jis kaafir pe dum nikle.",
+
+                "Hazaron khwahishein aisi,\nKi har khwahish pe dum nikle.",
+
+                "Tum aaye ho toh shab-e-intezar guzri hai,\nTalash mein thi sahar, ab bahaar guzri hai.",
+
+                "Aur bhi dukh hain zamaane mein mohabbat ke siwa,\nRaahatein aur bhi hain wasl ki raahat ke siwa.",
+
+                "Kabhi kisi ko mukammal jahaan nahi milta,\nKahin zameen toh kahin aasmaan nahi milta.",
+
+                "Nahi nigah mein manzil,\nToh justuju hi sahi.",
+
+                "Tere vaade par jiye hum,\nToh yeh jaan jhooth jaana.",
+
+                "Tum mere paas hote ho goya,\nJab koi doosra nahi hota."
             )
         ),
+
         ShayariModel(
             "Sad", listOf(
-                "Tanha raaton mein teri yaad sataye,\nAansuon ke saath har pal guzre jaaye.",
-                "Kis kis ko dard dikhayein apne,\nYahan toh log khud hi dard ka sabab hote hain.",
-                "Chhod gaye jo beech raah mein,\nWahi log aaj yaadon mein hai.",
-                "Dard hi toh hai jo zinda rakhta hai,\nWarna khushi mein toh sabhi marte hain.",
-                "Rishton mein bharosa ho toh faasle nahi hote,\nAgar na ho toh paas hoke bhi apne nahi hote.",
-                "Aansu bhi keh gaye ab toh ruk ja,\nJise chaha tha wo kisi aur ka ho gaya.",
-                "Pal bhar mein jo bewafa ho gaye,\nKabhi jin ke liye sab kuch chhod diya tha.",
-                "Tere jaane ka gham hai ab tak,\nPar tujhe paana bhi toh naseeb mein nahi tha.",
-                "Ab toh khud se bhi darr lagta hai,\nJis dil mein tu tha, woh dil ab tanha lagta hai.",
-                "Kya fayda us mohabbat ka,\nJo dard ban kar zindagi bhar sataye."
+                "Ab ke hum bichhde toh shayad kabhi khwabon mein milein,\nJis tarah sukhe hue phool kitaabon mein milein.",
+
+                "Ranjish hi sahi,\nDil hi dukhane ke liye aa.",
+
+                "Dil na-umeed toh nahi,\nNakaam hi toh hai.",
+
+                "Humko mita sake yeh zamaane mein dum nahi,\nHumse zamaana khud hai zamaane se hum nahi.",
+
+                "Main akela hi chala tha janib-e-manzil magar,\nLog saath aate gaye aur karwaan banta gaya.",
+
+                "Kar raha tha gham-e-jahan ka hisaab,\nAaj tum yaad be-hisaab aaye.",
+
+                "Bhool shayad bahut badi kar li,\nDil ne duniya se dosti kar li.",
+
+                "Humne maana ke taghaful na karoge lekin,\nKhaak ho jaayenge hum tumko khabar hone tak.",
+
+                "Woh afsana jise anjaam tak laana na ho mumkin,\nUse ek khoobsurat mod dekar chhodna achha.",
+
+                "Aaj ek aur baras beet gaya uske baghair,\nJiske hote hue hote the zamaane mere."
             )
         ),
-        ShayariModel(
-            "Friendship", listOf(
-                "Dosti har mod pe saath chalti hai,\nKhushi ho ya gham, har baat mein banti hai.",
-                "Ek saccha dost har mod par kaam aata hai,\nJo aansuon mein bhi muskuraana sikhaata hai.",
-                "Zindagi ki raah mein dosti ka sahara ho,\nToh har gham bhi lagta hai pyaara ho.",
-                "Dosti sirf lafzon ka silsila nahi hoti,\nYeh ek ehsaas hai jo har pal dil mein hoti hai.",
-                "Agar dosti mein wafadar dost ho,\nToh zindagi jannat se kam nahi hoti.",
-                "Sache dost dard mein saathi hote hain,\nKhushi mein unki hasi sabse baatein karti hai.",
-                "Jitni baar girte hain hum,\nUtni hi baar doston ka haath milta hai.",
-                "Kabhi musibat aaye toh yaad rakhna,\nTera yaar tere saath hamesha khada milega.",
-                "Jin ke saath hum dil se hanste hain,\nWahi dost zindagi ka asli hissa bante hain.",
-                "Dosti ek roshni hai andheron ke liye,\nEk muskaan hai dard bhare lamhon ke liye."
-            )
-        ),
+
         ShayariModel(
             "Motivation", listOf(
-                "Gir kar uthna hi toh jeet hoti hai,\nRuk jao toh har jagah haar hoti hai.",
-                "Sapne woh nahi jo neend mein aaye,\nSapne woh hain jo neend uda le jaaye.",
-                "Har andhera ek roshni ka raasta deta hai,\nBas hausla rakho, waqt badalta hai.",
-                "Asmaan ko chhoone ka junoon rakho,\nZameen par baithe toh sabhi rehte hain.",
-                "Kamyabi ki raah kabhi aasan nahi hoti,\nMehnat karne walon ki har baat khaas hoti hai.",
-                "Jo mushkilein deti hai zindagi,\nWahi aage badhne ka rasta bhi deti hai.",
-                "Thak jao toh kuch der aaram karo,\nPar sapno ko kabhi thamna mat.",
-                "Mehnat itni khamoshi se karo,\nKi safalta shor machaye.",
-                "Jab tak thake nahi ho, rukna mat,\nJeet tumhara intezaar kar rahi hai.",
-                "Har haar ek naya sabak deti hai,\nAur har sabak ek nayi jeet laata hai."
+                "Khudi ko kar buland itna,\nKi har taqdeer se pehle khuda bande se pooche bata teri raza kya hai.",
+
+                "Sitaron se aage jahan aur bhi hain,\nAbhi ishq ke imtihaan aur bhi hain.",
+
+                "Parwaaz hai dono ki isi ek fiza mein,\nKargas ka jahan aur hai, shaheen ka jahan aur.",
+
+                "Waqt karta hai parwarish barson,\nHaadsa ek dum nahi hota.",
+
+                "Safar khoobsurat hai manzil se bhi,\nYeh har kisi ko samajh nahi aata.",
+
+                "Khwaabon ke bojh se ab thak chuke hain log,\nPar aasman abhi bhi buland hai.",
+
+                "Jo tufanon mein palte ja rahe hain,\nWahi duniya badalte ja rahe hain.",
+
+                "Raste kabhi khatam nahi hote,\nLog himmat haar jaate hain.",
+
+                "Girna bhi achha hai,\nAukaat ka pata chalta hai.",
+
+                "Manzil mile na mile,\nSafar khoobsurat hona chahiye."
             )
         ),
+
         ShayariModel(
-            "Nature", listOf(
-                "Subah ki thandi hawa kuch keh jaati hai,\nHar patte ki khamoshi kuch sunaa jaati hai.",
-                "Baadalon mein chhupi ek kahani hoti hai,\nHar boond mein zindagi purani hoti hai.",
-                "Hawa ka jhonka bhi mehka hai aaj,\nShayad phir se aayi hai woh baag ki raaj.",
-                "Pedon ki chhaya mein sukoon milta hai,\nPrakriti se jud kar mann khilta hai.",
-                "Chandni raat mein sitare kuch kahte hain,\nKhamosh aasman bhi geet kehte hain.",
-                "Har mausam ek naya paigam laata hai,\nPrakriti har roz ek nayi kahani sunata hai.",
-                "Barish ki boondein jab chehre se takraati hain,\nToh zindagi ki thakan door ho jaati hai.",
-                "Suraj ki roshni jab phoolon par padti hai,\nToh rangon ki duniya aur bhi sajti hai.",
-                "Pahaadon ki wadiyon mein ek nasha hai,\nJo har musafir ko apna bana leta hai.",
-                "Nadiyon ka behna, jaise geet koi gaa raha ho,\nPrakriti bhi toh ek shayar ban jaata hai."
+            "Life", listOf(
+                "Zindagi kya kisi muflis ki qaba hai,\nJisme har ghadi dard ke paiband lage jaate hain.",
+
+                "Kaun kehta hai ki maut aayi toh mar jaaunga,\nMain toh dariya hoon samundar mein utar jaaunga.",
+
+                "Yeh daagh daagh ujala,\nYeh shab-gazida sahar.",
+
+                "Bas ek khamoshi hai,\nJo har baat keh jaati hai.",
+
+                "Waqt sabko milta hai zindagi badalne ke liye,\nPar zindagi dobara nahi milti waqt badalne ke liye.",
+
+                "Zindagi se yahi gila hai mujhe,\nTu bahut der se mila hai mujhe.",
+
+                "Har ek baat pe kehte ho tum ke tu kya hai,\nTumhi kaho ke yeh andaaz-e-guftagu kya hai.",
+
+                "Yeh duniya agar mil bhi jaaye toh kya hai.",
+
+                "Kuch toh majbooriyan rahi hongi,\nYun koi bewafa nahi hota.",
+
+                "Zindagi yun hui basar tanha,\nKaafila saath aur safar tanha."
+            )
+        ),
+
+        ShayariModel(
+            "Friendship", listOf(
+                "Dost ghamkhaar hona chahiye,\nDukh mein saath dene wala.",
+
+                "Dosti naam hai sukoon ka,\nWarna thak toh sab jaate hain.",
+
+                "Sacchi dosti mein hisaab nahi hota,\nBas saath hota hai.",
+
+                "Waqt badalta raha,\nPar kuch dost aaj bhi wahi hain.",
+
+                "Dosti woh nahi jo har roz baat kare,\nDosti woh hai jo har haal mein saath rahe.",
+
+                "Kuch rishte khoon se nahi,\nDil se bante hain.",
+
+                "Ek achha dost,\nZindagi ka sabse bada gift hota hai.",
+
+                "Doston ke saath chai bhi,\nDaawat lagti hai.",
+
+                "Har kisi ko dost mat samajhna,\nKuch log sirf waqt guzaarne aate hain.",
+
+                "Zindagi mein acche dost milna,\nKismat ki baat hoti hai."
             )
         )
     )

@@ -18,7 +18,6 @@ import com.example.shayariapp.ui.theme.ShayariAppTheme
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContent {
             ShayariAppTheme {
                 val navHostController = rememberNavController()
